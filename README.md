@@ -1,12 +1,16 @@
-# React + Vite
+# 💼 Portafolio de Thaliz Fajardo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Hola! Soy Thaliz, desarrolladora frontend enfocada en crear experiencias limpias, modernas y efectivas con tecnologías como **React**, **JavaScript**, **CSS** y **HTML**.
 
-Currently, two official plugins are available:
+Este repositorio contiene el código fuente de mi portafolio personal, donde muestro mis proyectos, habilidades y formas de contacto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías principales
 
-## Expanding the ESLint configuration
+- ReactJS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Estructura del proyecto
+
