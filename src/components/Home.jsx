@@ -14,10 +14,10 @@ const Home = () => {
             <img className="stroke-brush" src="src\assets\pics\9b6a8e7f-65c9-4abe-8fed-3de9486c71d2 1 (1).png" 
             alt="decotarive brush"/>
             
-          <img className="profile-img"
+          {/* <img className="profile-img"
           src="src\assets\pics\fotofrontalyosinfondo-Photoroom (1).png" alt="Mi foto"
     
-          />
+          /> */}
         </div>
       </div>
     </>
