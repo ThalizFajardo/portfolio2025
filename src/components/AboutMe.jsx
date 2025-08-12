@@ -46,43 +46,43 @@ const AboutMe = () => {
                 <ul>
                   <li>
                     <span className="about-info-logo">
-                      <i className="fas fa-gift"></i>
+                      {/* <i className="fas fa-gift"></i> */}
                     </span>
                     <span>
                       <label>Birthday:</label>11.07.1998
                     </span>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <span className="about-info-logo">
                       <i class="far fa-calendar-alt"></i>
                     </span>
                     <span>
                       <label>Age:</label>24
                     </span>
-                  </li>
+                  </li> */}
 
                   <li>
                     <span className="about-info-logo">
-                      <i class="fas fa-map-marker-alt"></i>
+                      {/* <i class="fas fa-map-marker-alt"></i> */}
                     </span>
                     <span>
                       <label>Location:</label>Ciudad de Mexico
                     </span>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <span className="about-info-logo">
                       <i class="fas fa-gamepad"></i>
                     </span>
                     <span>
                       <label>Interests:</label>Videogames, Music, Nature
                     </span>
-                  </li>
+                  </li> */}
 
                   <li>
                     <span className="about-info-logo">
-                      <i class="fas fa-school"></i>
+                      {/* <i class="fas fa-school"></i> */}
                     </span>
                     <span>
                       <label>Study:</label>Academlo
@@ -91,7 +91,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      <i class="fas fa-graduation-cap"></i>
+                      {/* <i class="fas fa-graduation-cap"></i> */}
                     </span>
                     <span>
                       <label>Degree:</label>Bachelor
@@ -100,7 +100,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      <i className="fas fa-envelope"></i>
+                      {/* <i className="fas fa-envelope"></i> */}
                     </span>
                     <span>
                       <label>Mail:</label>
@@ -110,7 +110,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      <i className="fas fa-phone-alt"></i>
+                      {/* <i className="fas fa-phone-alt"></i> */}
                     </span>
                     <span>
                       <label>Phone:</label>
