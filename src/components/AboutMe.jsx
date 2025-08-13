@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <>
-      <section className="about-section">
+      <section id="acerca-section" className="about-section">
         <div className="about-container">
           <article className="about-title">
             <span id="about-me">biography</span>
@@ -79,7 +79,7 @@ const AboutMe = () => {
                     </span>
                     <span>
                       <label>Mail:</label>
-                      <a href="mailto:fajardoThaliz@gmail.com">My mail</a>
+                      <a href="mailto:fajardothaliz@gmail.com">fajardothaliz@gmail.com</a>
                     </span>
                   </li>
 

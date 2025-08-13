@@ -48,7 +48,7 @@ const Menu = () => {
 
       {/* Botones adicionales */}
       <div className="nav_btns">
-        <div className="logo">
+        <div className="logoDownloadCV">
           <p>Download CV</p>
         </div>
         <div className="logo">

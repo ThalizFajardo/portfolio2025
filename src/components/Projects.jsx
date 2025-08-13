@@ -1,12 +1,17 @@
 import { Key } from "lucide-react";
 import React, { useState } from "react";
+import quotesImage from "../assets/pics/quotesAppImg.jpeg"
+import rymIcon from "../assets/pics/rymfoto.jpeg"
+import ecommerceIcon from "../assets/pics/vanillaEcomerce.jpeg"
+import eweaterImage from "../assets/pics/ewaterAppImg.jpeg"
 
 const Projects = () => {
   const PROJECTS = {
     frontend: [
-      { title: "Quotes App", img: "img/quotes.png", url: "htpps://..." },
-      { title: "Ecommerce", img: "img/quotes.png", url: "htpps://..." },
-      { title: "Rickymorty api", img: "img/quotes.png", url: "htpps://..." },
+      { title: "Quotes App", img: quotesImage, url: "https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/" },
+      { title: "Ecommerce", img: ecommerceIcon, url: "https://63445d92e8139737d3edd518--eclectic-jelly-0adca9.netlify.app/" },
+      { title: "Rickymorty ", img: rymIcon, url: "https://6342528143c38a4ee6073b74--neon-scone-747a15.netlify.app/" },
+      { title: "Rickymorty ", img: eweaterImage, url: "https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/" },
     ],
     backend: [],
   };
@@ -21,7 +26,7 @@ const Projects = () => {
   const items = PROJECTS[tab] ?? [];
 
   return (
-    <section className="projects-section" id="projects">
+    <section className="projects-section" id="portafolio">
       <header className="projects-title">
         <h3>Projects</h3>
         <p>
