@@ -3,36 +3,35 @@ import React, { useState } from "react";
 
 const Projects = () => {
   const PROJECTS = {
-    frontend : [
-      {title : 'Quotes App', img:'img/quotes.png',url:'htpps://...' },
-      {title : 'Ecommerce', img:'img/quotes.png',url:'htpps://...' },    
-      {title : 'Rickymorty api', img:'img/quotes.png',url:'htpps://...' },
+    frontend: [
+      { title: "Quotes App", img: "img/quotes.png", url: "htpps://..." },
+      { title: "Ecommerce", img: "img/quotes.png", url: "htpps://..." },
+      { title: "Rickymorty api", img: "img/quotes.png", url: "htpps://..." },
     ],
-    backend :[
-   
-    ]
-  }
+    backend: [],
+  };
 
-
-  const [tab,setTab] = useState('frontend');
+  const [tab, setTab] = useState("frontend");
 
   const tabs = [
-     { key: "frontend", label: "Front‑end" },
-    { key: "backend", label: "Back‑end" }
-  ]
+    { key: "frontend", label: "Front‑end" },
+    { key: "backend", label: "Back‑end" },
+  ];
 
   const items = PROJECTS[tab] ?? [];
 
   return (
-  <section className="projects-section" id="projects">
+    <section className="projects-section" id="projects">
       <header className="projects-title">
         <h3>Projects</h3>
-        <p>Estos son algunos proyectos que he desarrollado. (Haz clic para ver más)</p>
+        <p>
+          Estos son algunos proyectos que he desarrollado.
+        </p>
       </header>
 
       {/* Tabs */}
       <div className="tabs" role="tablist" aria-label="Categorias de proyectos">
-        {tabs.map(t => (
+        {tabs.map((t) => (
           <button
             key={t.key}
             role="tab"
@@ -47,8 +46,14 @@ const Projects = () => {
 
       {/* Grid de proyectos */}
       <div className="projects-grid">
-        {items.map(card => (
-          <a className="project-card" key={card.title} href={card.url} target="_blank" rel="noreferrer">
+        {items.map((card) => (
+          <a
+            className="project-card"
+            key={card.title}
+            href={card.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={card.img} alt={card.title} />
             <div className="project-card__info">
               <h4>{card.title}</h4>
@@ -59,7 +64,7 @@ const Projects = () => {
           <div className="projects-empty">Cooming soon ✨</div>
         )}
       </div>
-    </section>  
+    </section>
   );
 };
 

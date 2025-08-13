@@ -44,24 +44,8 @@ const AboutMe = () => {
 
               <div className="about-info-list">
                 <ul>
-                  <li>
-                    <span className="about-info-logo">
-                      {/* <i className="fas fa-gift"></i> */}
-                    </span>
-                    <span>
-                      <label>Birthday:</label>11.07.1998
-                    </span>
-                  </li>
-
-                  {/* <li>
-                    <span className="about-info-logo">
-                      <i class="far fa-calendar-alt"></i>
-                    </span>
-                    <span>
-                      <label>Age:</label>24
-                    </span>
-                  </li> */}
-
+                  
+            
                   <li>
                     <span className="about-info-logo">
                       {/* <i class="fas fa-map-marker-alt"></i> */}
@@ -70,15 +54,6 @@ const AboutMe = () => {
                       <label>Location:</label>Ciudad de Mexico
                     </span>
                   </li>
-
-                  {/* <li>
-                    <span className="about-info-logo">
-                      <i class="fas fa-gamepad"></i>
-                    </span>
-                    <span>
-                      <label>Interests:</label>Videogames, Music, Nature
-                    </span>
-                  </li> */}
 
                   <li>
                     <span className="about-info-logo">
