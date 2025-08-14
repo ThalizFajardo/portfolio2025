@@ -72,8 +72,8 @@ const SKILLS = [
     items: [
       { name: "English",level: "intermediate(B1)", icon:languageIcon },
       { name: "Clean UI & detalle", level: "Strong", icon: uiIcon},
-      { name: "Comunicación", level: "Strong", icon: comunicacionIcon },
-      { name: "Trabajo en equipo", level: "Strong", icon: teamIcon },
+      { name: "Comunication", level: "Strong", icon: comunicacionIcon },
+      { name: "Teamwork", level: "Strong", icon: teamIcon },
       { name: "Resilence", level: "Strong", icon: resilenceIcon },
       { name: "Agile metodologies", level: "Strong", icon: scrumIcom },
     ],
@@ -86,8 +86,7 @@ export default function Skills() {
       <div className="skills__head">
         <h2>Skills</h2>
         <p>
-          Stack técnico y habilidades que uso para construir productos limpios y
-          funcionales.
+        Technical stack and skills I use to build clean, functional products.
         </p>
       </div>
 

@@ -43,8 +43,8 @@ export default function Contact() {
   return (
     <section id="contacto-section" className="contact">
       <header className="contact__head">
-        <h2>Contacto</h2>
-        <p>¿Tienes un proyecto o vacante? Escríbeme y hablamos.</p>
+        <h2>Contact</h2>
+        <p>Working on something exciting or hiring? Let’s chat!</p>
       </header>
 
       <div className="contact__grid">
@@ -53,25 +53,28 @@ export default function Contact() {
           <ul>
             <li>
               <strong>Email:</strong>{" "}
-              <a href="mailto:fajardothaliz@gmail.com">
+              <a 
+              className="link"
+              href="mailto:fajardothaliz@gmail.com">
                 fajardothaliz@gmail.com
               </a>
             </li>
             <li>
               <strong>LinkedIn:</strong>{" "}
               <a
+              className="link"
                 href="https://www.linkedin.com/in/thal%C3%ADz-fajardo-00026a244/"
                 target="_blank"
                 rel="noreferrer"
               >
-                perfil de linkedin
+                View profile
               </a>
             </li>
             <li>
-              <strong>Ubicación:</strong> Ciudad de México
+              <strong>Location:</strong> Mexico City
             </li>
           </ul>
-          <p className="contact__note">Tiempo de respuesta ~24h.</p>
+          <p className="contact__note">Typical response time: ~24h.</p>
         </div>
 
         {/* Columna formulario */}
@@ -79,22 +82,22 @@ export default function Contact() {
           {/* Honeypot anti‑spam */}
           <input type="text" name="company" tabIndex="-1" autoComplete="off" className="hp" />
 
-          <label> Nombre
-            <input name="name" type="text" placeholder="Tu nombre"  required minLength={2}  />
+          <label> Name
+            <input name="name" type="text" placeholder="your name"  required minLength={2}  />
           </label>
 
           <label> Email 
-            <input  name="email" type="email"placeholder="tu@correo.com"  inputMode="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
+            <input  name="email" type="email"placeholder="your@email.com"  inputMode="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
           </label>
 
           <label>
-            Mensaje
-            <textarea name="message" rows="5" placeholder="Cuéntame en qué te ayudo"required />
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me how I can help you"required />
           </label>
 
 
           <button type="submit" disabled={status.loading}>
-            {status.loading ? "Enviando..." : "Enviar mensaje"}
+            {status.loading ? "Sending..." : "Send message"}
           </button>
 
           {status.ok === true && (

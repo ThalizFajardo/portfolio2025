@@ -30,7 +30,7 @@ const Projects = () => {
       <header className="projects-title">
         <h3>Projects</h3>
         <p>
-          Estos son algunos proyectos que he desarrollado.
+          These are some projects I have developed.
         </p>
       </header>
 

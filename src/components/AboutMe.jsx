@@ -13,14 +13,18 @@ const AboutMe = () => {
             <div className="about-img-container">
               <div className="about-img-border">
                 <figure className="about-img-inner">
+                  <img
+                    src="src\assets\pics\img4background.jpg"
+                    alt=""
+                  />
                   {/* <img
                     src="src\assets\pics\fotofrontalyosinfondo-Photoroom (1).png"
                     alt=""
                   /> */}
-                   <img
+                   {/* <img
                     src="src\assets\pics\1e7cd3db-1194-48a5-99ec-1888f6af0e83.jpg"
                     alt=""
-                  />
+                  /> */}
                 </figure>
               </div>
             </div>
@@ -28,17 +32,13 @@ const AboutMe = () => {
             <div className="about-info-container">
               <div className="about-info-title">
                 <h3>
-                  I'm Thaliz Fajardo | <span>Front end Web Developer</span>
+                  I'm Thaliz Fajardo | <span>Front-end Web Developer</span>
                 </h3>
               </div>
 
               <div className="about-info-text">
                 <p>
-                  Hola mi nombre es <span> Thaliz Fajardo</span> amet
-                  consectetur adipisicing elit. Temporibus, illum aspernatur.
-                  Debitis assumenda deleniti quibusdam commodi, saepe animi
-                  porro sint velit. Officia recusandae ex iste possimus,
-                  asperiores accusantium eligendi illum?
+                  Hi i'm <span> Thaliz Fajardo</span> I'm a frontend-focused developer with experience leading high-impact digital projects and coordinating technical teams. I'm passionate about building functional, automated, and scalable solutions—especially when they solve real business challenges. I enjoy collaborating with multidisciplinary teams, providing technical vision, and bringing structure and efficiency through development. Currently, I’m expanding my skill set toward full-stack development to increase my technical impact and autonomy when creating solutions.
                 </p>
               </div>
 
