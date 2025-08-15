@@ -1,4 +1,11 @@
 import React from "react";
+import mappinIcon from "../assets/map-pin.svg"
+import filbadgeIcon from "../assets/file-badge.svg"
+import graduationIcon from "../assets/graduation-cap.svg"
+import mailIcon from "../assets/mail.svg"
+import phoneIcon from "../assets/phone.svg"
+
+
 
 const AboutMe = () => {
   return (
@@ -14,17 +21,9 @@ const AboutMe = () => {
               <div className="about-img-border">
                 <figure className="about-img-inner">
                   <img
-                    src="src\assets\pics\img4background.jpg"
-                    alt=""
+                    src="src\assets\pics\profilepic.jpg"
+                    alt="profile picture"
                   />
-                  {/* <img
-                    src="src\assets\pics\fotofrontalyosinfondo-Photoroom (1).png"
-                    alt=""
-                  /> */}
-                   {/* <img
-                    src="src\assets\pics\1e7cd3db-1194-48a5-99ec-1888f6af0e83.jpg"
-                    alt=""
-                  /> */}
                 </figure>
               </div>
             </div>
@@ -48,7 +47,7 @@ const AboutMe = () => {
             
                   <li>
                     <span className="about-info-logo">
-                      {/* <i class="fas fa-map-marker-alt"></i> */}
+                      <img src={mappinIcon} alt="Location Icon" />
                     </span>
                     <span>
                       <label>Location:</label>Ciudad de Mexico
@@ -57,7 +56,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      {/* <i class="fas fa-school"></i> */}
+                     <img src={filbadgeIcon} alt="Study Icon" />
                     </span>
                     <span>
                       <label>Study:</label>Academlo
@@ -66,7 +65,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      {/* <i class="fas fa-graduation-cap"></i> */}
+                     <img src={graduationIcon} alt="graduation Icon" />
                     </span>
                     <span>
                       <label>Degree:</label>Bachelor
@@ -75,7 +74,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      {/* <i className="fas fa-envelope"></i> */}
+                      <img src={mailIcon} alt="Mail Icon" />
                     </span>
                     <span>
                       <label>Mail:</label>
@@ -85,7 +84,7 @@ const AboutMe = () => {
 
                   <li>
                     <span className="about-info-logo">
-                      {/* <i className="fas fa-phone-alt"></i> */}
+                      <img src={phoneIcon} alt="phone Icon" />
                     </span>
                     <span>
                       <label>Phone:</label>
