@@ -4,7 +4,7 @@ import filbadgeIcon from "../assets/file-badge.svg"
 import graduationIcon from "../assets/graduation-cap.svg"
 import mailIcon from "../assets/mail.svg"
 import phoneIcon from "../assets/phone.svg"
-
+import profilepic from "../assets/pics/profilepic.jpg"
 
 
 const AboutMe = () => {
@@ -21,7 +21,7 @@ const AboutMe = () => {
               <div className="about-img-border">
                 <figure className="about-img-inner">
                   <img
-                    src="src\assets\pics\profilepic.jpg"
+                    src={profilepic}
                     alt="profile picture"
                   />
                 </figure>
