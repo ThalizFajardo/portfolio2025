@@ -4,7 +4,7 @@ import filbadgeIcon from "../assets/file-badge.svg";
 import graduationIcon from "../assets/graduation-cap.svg";
 import mailIcon from "../assets/mail.svg";
 import phoneIcon from "../assets/phone.svg";
-import profilepic from "../assets/pics/profilepic.jpg";
+import bg  from "../assets/profilepic.jpg";
 
 const AboutMe = () => {
   return (
@@ -18,9 +18,15 @@ const AboutMe = () => {
           <div className="about-inner">
             <div className="about-img-container">
               <div className="about-img-border">
-              <figure className="about-img-inner">
-  <img src={profilepic} alt="Profile picture" className="profile-img" />
-</figure>
+                <figure
+                  className="about-img-inner"
+                  style={{ backgroundImage: `url(${bg})` }}  >
+                  <img
+                    src={bg}
+                    alt="Propic"
+                    className="profile-img"
+                  />
+                </figure>
               </div>
             </div>
 
