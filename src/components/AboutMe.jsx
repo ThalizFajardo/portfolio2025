@@ -18,15 +18,9 @@ const AboutMe = () => {
           <div className="about-inner">
             <div className="about-img-container">
               <div className="about-img-border">
-                <figure
-                  className="about-img-inner"
-                  style={{ backgroundImage: `url(${profilepic})` }}  >
-                  <img
-                    src={profilepic}
-                    alt="Profile picture"
-                    className="profile-img"
-                  />
-                </figure>
+              <figure className="about-img-inner">
+  <img src={profilepic} alt="Profile picture" className="profile-img" />
+</figure>
               </div>
             </div>
 
