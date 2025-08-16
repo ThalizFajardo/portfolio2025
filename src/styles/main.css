@@ -372,7 +372,8 @@ nav {
     overflow: hidden;
     background: #1b1717;
     transition: all 0.3s ease-out; */
-    background-image: url("src/assets/pics/img4background.jpg");
+    
+    background-image: url("../assets/pics/profilepic.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
