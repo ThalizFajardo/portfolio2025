@@ -7,6 +7,8 @@ import phoneIcon from "../assets/phone.svg";
 import bg  from "../assets/profilepic.jpg";
 
 const AboutMe = () => {
+
+
   return (
     <>
       <section id="acerca-section" className="about-section">

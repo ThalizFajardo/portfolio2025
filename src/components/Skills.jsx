@@ -56,12 +56,12 @@ const SKILLS = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
       },
       {
-        name: "Bosstrap",
+        name: "Bootstrap",
         level: "Advanced",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
       },
       {
-        name: "Wordpres",
+        name: "WordPress",
         level: "Intermediate",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
       },
@@ -72,10 +72,10 @@ const SKILLS = [
     items: [
       { name: "English",level: "intermediate(B1)", icon:languageIcon },
       { name: "Clean UI & detalle", level: "Strong", icon: uiIcon},
-      { name: "Comunication", level: "Strong", icon: comunicacionIcon },
+      { name: "Communication", level: "Strong", icon: comunicacionIcon },
       { name: "Teamwork", level: "Strong", icon: teamIcon },
       { name: "Resilence", level: "Strong", icon: resilenceIcon },
-      { name: "Agile metodologies", level: "Strong", icon: scrumIcom },
+      { name: "Agile methodologies", level: "Strong", icon: scrumIcom },
     ],
   },
 ];

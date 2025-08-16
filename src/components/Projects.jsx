@@ -66,7 +66,7 @@ const Projects = () => {
           </a>
         ))}
         {items.length === 0 && (
-          <div className="projects-empty">Cooming soon ✨</div>
+          <div className="projects-empty">Coming soon ✨</div>
         )}
       </div>
     </section>
