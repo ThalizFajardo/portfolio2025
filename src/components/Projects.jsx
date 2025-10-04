@@ -9,7 +9,7 @@ const Projects = () => {
   const PROJECTS = {
     frontend: [
       { title: "Quotes App", img: quotesImage, url: "https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/" },
-      { title: "Ecommerce", img: ecommerceIcon, url: "https://63445d92e8139737d3edd518--eclectic-jelly-0adca9.netlify.app/" },
+      { title: "Ecommerce", img: ecommerceIcon, url: "https://eclectic-jelly-0adca9.netlify.app/" },
       { title: "Rickymorty ", img: rymIcon, url: "https://6342528143c38a4ee6073b74--neon-scone-747a15.netlify.app/" },
       { title: "Rickymorty ", img: eweaterImage, url: "https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/" },
     ],
