@@ -2,6 +2,8 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import i18next from "i18next";
 import { useI18n } from "../hooks/useI18n";
+import decorativeBrush from "../assets/pics/People of Brooklyn - The Borough.png";
+
 
 const Home = () => {
   const { tx ,lang } = useI18n();
@@ -67,7 +69,7 @@ const Home = () => {
       <div className="hero-image-wrapper">
         <img
           className="stroke-brush"
-          src="src\assets\pics\People of Brooklyn - The Borough.png"
+          src={decorativeBrush}
           alt="decotarive brush"
         />
         {/* <DotLottieReact
