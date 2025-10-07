@@ -1,0 +1,70 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About me",
+  "nav.skills": "Skills",
+  "nav.projects": "Projects",
+  "nav.contact": "Contact",
+  "nav.dwcv.btn": "Download cv",
+
+  "hero.hi": "Hi there,",
+  "hero.title": "I’m Thalíz — Front-end Developer (growing into Full-stack).",
+  "hero.typing.items": [
+    "Thaliz",
+    "Front-end Developer",
+    "growing into Full-stack"
+  ],
+  "hero.typing.template": "I’m {{text}}",
+  "hero.sub": "I design beautifully simple things. And I love what I do.",
+  "hero.cta.projects": "See projects",
+  "hero.cta.email": "Email me",
+
+  "about.title": "About me",
+  "about.ponounce": "I’m",
+  "about.role": "Front-end Web Developer",
+  "about.bio": "Hi, I'm <name>{{name}}</name>. I'm a frontend-focused developer with experience leading high-impact digital projects and coordinating technical teams. I'm passionate about building functional, automated, and scalable solutions—especially when they solve real business challenges. I enjoy collaborating with multidisciplinary teams, providing technical vision, and bringing structure and efficiency through development. Currently, I’m expanding my skill set toward full-stack development to increase my technical impact and autonomy when creating solutions.",
+  "about.info.location": "Location",
+  "about.info.location.city": "Mexico city",
+  "about.info.study": "Study",
+  "about.info.degree": "Degree",
+  "about.info.mail": "Mail",
+  "about.info.phone": "Phone",
+
+    "skills.title": "Skills",
+  "skills.sub": "Technical stack and skills I use to build clean, functional products.",
+  "skills.frontend": "Front-end",
+  "skills.tools": "Tools",
+  "skills.soft": "Soft skills",
+
+  "skills.level.starter": "Starter",
+  "skills.level.intermediate": "Intermediate",
+  "skills.level.advanced": "Advanced",
+  "skills.softskills.strong":"Strong",
+
+  "skills.softskills.english": "English",
+  "skills.softskills.cleanUI": "Clean UI & detail",
+  "skills.softskills.communication": "Communication",
+  "skills.softskills.teamwork": "Teamwork",
+  "skills.softskills.resilience": "Resilience",
+  "skills.softskills.agile": "Agile methodologies",
+
+  "projects.title": "Projects",
+  "projects.lead": "These are some projects I have developed.",
+  "projects.filters.frontend": "Front-end",
+  "projects.filters.backend": "Back-end",
+  "projects.cta.demo": "Demo",
+  "projects.cta.code": "Code",
+  "projects.empty": "Coming soon ✨",
+
+  "contact.title": "Contact",
+  "contact.lead": "Working on something exciting or hiring? Let’s chat!",
+  "contact.form.name": "Name",
+  "contact.form.email": "Email",
+  "contact.form.message": "Message",
+  "contact.form.placeholder.name": "your name",
+  "contact.form.placeholder.email": "your@email.com",
+  "contact.form.placeholder.message": "Tell me how I can help you",
+  "contact.form.submit": "Send message",
+
+  "alt.profile": "Profile photo of Thalíz",
+  "alt.project.screenshot": "{{title}} — screenshot"
+}

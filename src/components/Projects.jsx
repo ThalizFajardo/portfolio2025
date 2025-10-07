@@ -1,4 +1,5 @@
-import { Key } from "lucide-react";
+
+import { useI18n } from "../hooks/useI18n";
 import React, { useState } from "react";
 import quotesImage from "../assets/pics/quotesAppImg.jpeg"
 import rymIcon from "../assets/pics/rymfoto.jpeg"
@@ -6,6 +7,9 @@ import ecommerceIcon from "../assets/pics/vanillaEcomerce.jpeg"
 import eweaterImage from "../assets/pics/ewaterAppImg.jpeg"
 
 const Projects = () => {
+  const {tx} =  useI18n();
+  
+  
   const PROJECTS = {
     frontend: [
       { title: "Quotes App", img: quotesImage, url: "https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/" },
@@ -28,9 +32,9 @@ const Projects = () => {
   return (
     <section className="projects-section" id="portafolio">
       <header className="projects-title">
-        <h3>Projects</h3>
+        <h3>{tx("projects.title")}</h3>
         <p>
-          These are some projects I have developed.
+          {tx("projects.lead")}
         </p>
       </header>
 
@@ -66,7 +70,7 @@ const Projects = () => {
           </a>
         ))}
         {items.length === 0 && (
-          <div className="projects-empty">Coming soon ✨</div>
+          <div className="projects-empty">{tx("projects.empty")}</div>
         )}
       </div>
     </section>

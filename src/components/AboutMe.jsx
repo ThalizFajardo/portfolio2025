@@ -1,13 +1,16 @@
 import React from "react";
+import { useI18n } from "../hooks/useI18n";
+import { Trans } from "react-i18next";
+
 import mappinIcon from "../assets/map-pin.svg";
 import filbadgeIcon from "../assets/file-badge.svg";
 import graduationIcon from "../assets/graduation-cap.svg";
 import mailIcon from "../assets/mail.svg";
 import phoneIcon from "../assets/phone.svg";
-import bg  from "../assets/profilepic.jpg";
+import bg from "../assets/profilepic.jpg";
 
 const AboutMe = () => {
-
+  const { tx } = useI18n();
 
   return (
     <>
@@ -15,19 +18,16 @@ const AboutMe = () => {
         <div className="about-container">
           <article className="about-title">
             <span id="about-me">biography</span>
-            <h3>About me</h3>
+            <h3>{tx("about.title")}</h3>
           </article>
           <div className="about-inner">
             <div className="about-img-container">
               <div className="about-img-border">
                 <figure
                   className="about-img-inner"
-                  style={{ backgroundImage: `url(${bg})` }}  >
-                  <img
-                    src={bg}
-                    alt="Propic"
-                    className="profile-img"
-                  />
+                  style={{ backgroundImage: `url(${bg})` }}
+                >
+                  <img src={bg} alt="Propic" className="profile-img" />
                 </figure>
               </div>
             </div>
@@ -35,22 +35,19 @@ const AboutMe = () => {
             <div className="about-info-container">
               <div className="about-info-title">
                 <h3>
-                  I'm Thaliz Fajardo | <span>Front-end Web Developer</span>
+                  {tx("about.ponounce")} Thaliz Fajardo |{" "}
+                  <span>{tx("about.role")}</span>
                 </h3>
               </div>
 
               <div className="about-info-text">
                 <p>
-                  Hi i'm <span> Thaliz Fajardo</span> I'm a frontend-focused
-                  developer with experience leading high-impact digital projects
-                  and coordinating technical teams. I'm passionate about
-                  building functional, automated, and scalable
-                  solutions—especially when they solve real business challenges.
-                  I enjoy collaborating with multidisciplinary teams, providing
-                  technical vision, and bringing structure and efficiency
-                  through development. Currently, I’m expanding my skill set
-                  toward full-stack development to increase my technical impact
-                  and autonomy when creating solutions.
+                  <Trans
+                    t={tx}
+                    i18nKey="about.bio" // clave dentro de about.json
+                    values={{ name: "Thalíz Fajardo" }}
+                    components={{ name: <span className="highlight" /> }}
+                  />
                 </p>
               </div>
 
@@ -61,7 +58,7 @@ const AboutMe = () => {
                       <img src={mappinIcon} alt="Location Icon" />
                     </span>
                     <span>
-                      <label>Location:</label>Ciudad de Mexico
+                      <label>{tx("about.info.location")}: </label>{tx("about.info.location.city")}
                     </span>
                   </li>
 
@@ -70,7 +67,7 @@ const AboutMe = () => {
                       <img src={filbadgeIcon} alt="Study Icon" />
                     </span>
                     <span>
-                      <label>Study:</label>Academlo
+                      <label>{tx("about.info.study")} :</label>Academlo
                     </span>
                   </li>
 
@@ -79,7 +76,7 @@ const AboutMe = () => {
                       <img src={graduationIcon} alt="graduation Icon" />
                     </span>
                     <span>
-                      <label>Degree:</label>Bachelor
+                      <label>{tx("about.info.degree")} :</label>Bachelor
                     </span>
                   </li>
 
@@ -88,7 +85,7 @@ const AboutMe = () => {
                       <img src={mailIcon} alt="Mail Icon" />
                     </span>
                     <span>
-                      <label>Mail:</label>
+                      <label>{tx("about.info.mail")}:</label>
                       <a href="mailto:fajardothaliz@gmail.com">
                         fajardothaliz@gmail.com
                       </a>
@@ -100,7 +97,7 @@ const AboutMe = () => {
                       <img src={phoneIcon} alt="phone Icon" />
                     </span>
                     <span>
-                      <label>Phone:</label>
+                      <label>{tx("about.info.phone")} :</label>
                       <a href="tel:+525529039985">+525529039985</a>
                     </span>
                   </li>

@@ -1,14 +1,16 @@
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { useEffect, useRef, useState } from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import i18next from "i18next";
+import { useI18n } from "../hooks/useI18n";
 
+const Home = () => {
+  const { tx ,lang } = useI18n();
 
-const Home = () => {  
-  
-  const toRotate = [
-    "Thaliz",
-    "Front-end Developer",
-    "growing into Full-stack ",
-  ];
+ const toRotate = useMemo(
+  ()=>tx("hero.typing.items",{returnObjects : true}) ?? [],
+  [tx,lang]
+ )
+
   const period = 1200; // pausa cuando termina de escribir
 
   const [loopNum, setLoopNum] = useState(0);
@@ -49,31 +51,32 @@ const Home = () => {
   }, [text, delta, isDeleting, loopNum]);
 
   return (
-  <div id="casa-section" className="hero-container hero__content">
+    <div id="casa-section" className="hero-container hero__content">
       <div className="hero-text">
-        <h1> Hi There,</h1>
+        <h1>{tx("hero.hi")}</h1>
 
         <p className="typewriter">
-          <span aria-live="polite" className="wrap">I'm {text}</span>
+          <span aria-live="polite" className="wrap">
+            {tx("hero.typing.template", { text })}
+          </span>
         </p>
 
-        <p>I design beautifully simple things. And I love what I do.</p>
+        <p>{tx("hero.sub")}</p>
       </div>
 
       <div className="hero-image-wrapper">
-        {/* <img
+        <img
           className="stroke-brush"
-          src="src\assets\pics\9b6a8e7f-65c9-4abe-8fed-3de9486c71d2 1 (1).png"
+          src="src\assets\pics\People of Brooklyn - The Borough.png"
           alt="decotarive brush"
+        />
+        {/* <DotLottieReact
+          src="https://lottie.host/a316564a-9429-499e-9550-b37e90f7af3a/tnq7liL8UU.lottie"
+          loop
+          autoplay
         /> */}
-        <DotLottieReact
-      src="https://lottie.host/a316564a-9429-499e-9550-b37e90f7af3a/tnq7liL8UU.lottie"
-      loop
-      autoplay
-    />
       </div>
     </div>
-
   );
 };
 

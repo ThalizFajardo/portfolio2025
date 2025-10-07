@@ -1,19 +1,37 @@
 import React, { useEffect, useState } from "react";
-import cvFile from "../../assets/files/Thaliz_Fajardo_CV.pdf";
-
-
+import cvFilees from "../../assets/files/Thaliz_Fajardo_CVes.pdf";
+import cvFileen from "../../assets/files/Thaliz_Fajardo_CVen.pdf";
+import { useI18n } from "../../hooks/useI18n";
 
 const Menu = () => {
   const [scrolled, setScrolled] = useState(false);
 
- const handleDownload = () => {
-  const a = document.createElement("a");
-  a.href = cvFile;
-  a.download = "Thaliz_Fajardo_CV.pdf";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-};
+  const { tx, lang, toggle } = useI18n();
+
+  const [isLigth, setIsLigth] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    document.body.classList.toggle("dark-theme", isLigth);
+    localStorage.setItem("theme", isLigth ? "light" : "dark");
+  }, [isLigth]);
+
+  const toggleTheme = () => {
+    setIsLigth(!isLigth);
+  };
+
+  const handleDownload = () => {
+    const a = document.createElement("a");
+
+    a.href = lang === "es" ? cvFilees : cvFileen;
+    a.download =
+      lang === "es" ? "Thaliz_Fajardo_CVes.pdf" : "Thaliz_Fajardo_CVen.pdf";
+
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,10 +40,9 @@ const Menu = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // cleanup
-    // return () => {
-    //   window.removeEventListener("scroll", handleScroll);
-    // };
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -42,26 +59,34 @@ const Menu = () => {
       {/* Lista de navegación */}
       <ul className="nav-list">
         <li className="nav-item">
-          <a href="#casa-section">Home</a>
+          <a href="#casa-section">{tx("nav.home")}</a>
         </li>
         <li className="nav-item">
-          <a href="#acerca-section">About me</a>
+          <a href="#acerca-section">{tx("nav.about")}</a>
         </li>
         <li className="nav-item">
-          <a href="#habilidades-section">Skills</a>
+          <a href="#habilidades-section">{tx("nav.skills")}</a>
         </li>
         <li className="nav-item">
-          <a href="#portafolio">Portfolio</a>
+          <a href="#portafolio">{tx("nav.projects")}</a>
         </li>
         <li className="nav-item">
-          <a href="#contacto-section">Contact</a>
+          <a href="#contacto-section">{tx("nav.contact")}</a>
         </li>
       </ul>
 
       {/* Botones adicionales */}
       <div className="nav_btns">
+        <button onClick={toggleTheme} aria-label="Change theme">
+          {isLigth ? "☀️" : "🌙"}
+        </button>
+
+        <button onClick={toggle} aria-label="Change language">
+          🌐 {lang.toLocaleUpperCase()}
+        </button>
+
         <button onClick={handleDownload} className="logoDownloadCV">
-          Download CV
+          {tx("nav.dwcv.btn")}
         </button>
         <div className="logo">{/* <i>{lnIcon}</i> */}</div>
       </div>

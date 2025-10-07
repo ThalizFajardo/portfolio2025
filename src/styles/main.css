@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-/* @import "devicon/devicon.min.css"; */
 
 
 :root {
@@ -10,14 +9,17 @@
     /* COLORS */
 
     /* LIGTH THEME  */
+    --white-bg: white;
     --white: #fff;
     --body-bg: #fefcf8;
     --title-color: #034741;
     --text-color: #555;
     --text-color-light: hsl(0, 0%, 55%);
 
+  
     /* FONTS AND TYPOPGRAFY */
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins',
+    sans-serif;
     --biggest-font-size: 4rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -47,6 +49,18 @@
     /* trasition darkmode */
     --transition-fordarkmode: .4s;
 }
+
+  /* DARK THEME */
+    body.dark-theme {
+         --white-bg: #0e141b
+  --white: #f1f1f1;
+  --body-bg: #0e141b;
+  --title-color: #8ef6c0;
+  --text-color: #cfcfcf;
+  --text-color-light:#8b8b8b;
+}
+
+
 
 
 /* RESET PROPERTIES */
@@ -124,7 +138,7 @@ nav {
 }
 
 .navbar.scrolled {
-    background-color: var(--white);
+    background-color: var(--body-bg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -152,7 +166,14 @@ nav {
     color: var(--font-color);
 }
 
-.logoDownloadCV {
+/* .nav_btns > button{
+    background: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 3px 5px;
+} */
+
+.logoDownloadCV,.nav_btns > button  {
     background-color: initial;
     color: var(--text-color);
     font-size: 15px;
@@ -320,11 +341,11 @@ nav {
     }
 
     .typewriter {
-   
-    white-space: normal;
- 
-}
-    
+
+        white-space: normal;
+
+    }
+
 }
 
 /* ABOUT ME */
@@ -372,7 +393,7 @@ nav {
     overflow: hidden;
     background: #1b1717;
     transition: all 0.3s ease-out; */
-/*     
+    /*     
     background-image: url("../assets/pics/profilepic.jpg"); */
     background-size: cover;
     background-position: center;
@@ -382,6 +403,12 @@ nav {
     overflow: hidden;
     transition: all 0.3s ease-out;
 }
+
+.highlight {
+    font-weight: 600;
+    color: var(--accent);
+}
+
 
 .about-section .about-img-inner:hover {
     transform: translate3d(-10px, 15px, 0);
@@ -541,7 +568,7 @@ nav {
 /* SKILLS */
 .skills {
     padding: 60px 80px;
-    background: var(--white);
+    background: var(--white-bg);
 }
 
 .skills__head h2 {
@@ -858,7 +885,7 @@ nav {
 /* CONTACT ME  */
 .contact {
     padding: 60px 80px;
-    background: #fff;
+    background: var(--white-bg);
 }
 
 .contact__head h2 {
@@ -1007,4 +1034,57 @@ nav {
     .contact__grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* From Uiverse.io by alexruix */ 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
 }

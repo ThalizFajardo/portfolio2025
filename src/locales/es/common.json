@@ -1,0 +1,73 @@
+{
+  "nav.home": "Inicio",
+  "nav.about": "Acerca de mí",
+  "nav.skills": "Habilidades",
+  "nav.projects": "Mis proyectos",
+  "nav.contact": "Contacto",
+  "nav.dwcv.btn": "Descargar cv",
+
+  "hero.hi": "Hola,",
+  "hero.title": "Soy Thalíz — Desarrolladora Front-end (en transición a Full-stack).",
+  "hero.typing.items": [
+    "Thaliz",
+    "Front-end Developer",
+    "Full-stack en formación"
+  ],
+  "hero.typing.template": "Soy {{text}}",
+  "hero.sub": "Diseño cosas sencillas y hermosas. Y me encanta lo que hago.",
+  "hero.cta.projects": "Ver proyectos",
+  "hero.cta.email": "Escríbeme",
+
+  "about.title": "Acerca de mí",
+  "about.ponounce": "Soy",
+  "about.role": "Desarrolladora Web Front-end",
+  "about.bio": "Hola, soy <name>{{name}}</name>. Soy desarrolladora enfocada en front-end, con experiencia liderando proyectos digitales de alto impacto y coordinando equipos técnicos. Me apasiona construir soluciones funcionales, automatizadas y escalables —especialmente cuando resuelven retos reales del negocio—. Disfruto colaborar con equipos multidisciplinarios, aportar visión técnica y brindar estructura y eficiencia mediante el desarrollo. Actualmente estoy ampliando mis habilidades hacia el desarrollo full-stack para aumentar mi impacto técnico y mi autonomía al crear soluciones.",
+  "about.info.location": "Ubicación",
+  "about.info.location.city": " Ciudad de Mexico",
+  "about.info.study": "Estudios",
+  "about.info.degree": "Grado",
+  "about.info.mail": "Correo",
+  "about.info.phone": "Teléfono",
+
+  "skills.title": "Habilidades",
+  "skills.sub": "Stack técnico y habilidades que utilizo para crear productos limpios y funcionales.",
+  "skills.frontend": "Front-end",
+  "skills.tools": "Herramientas",
+  "skills.soft": "Habilidades blandas",
+  "skills.level.starter": "Principiante",
+  
+
+
+  "skills.level.intermediate": "Intermedio",
+  "skills.level.advanced": "Avanzado",
+"skills.softskills.strong":"Fuerte",
+
+
+  "skills.softskills.english": "Inglés",
+  "skills.softskills.cleanUI": "Clean UI & detail",
+  "skills.softskills.communication": "Communicación",
+  "skills.softskills.teamwork": "Colaboración",
+  "skills.softskills.resilience": "Resiliencia",
+  "skills.softskills.agile": "Agile methodologies",
+
+  "projects.title": "Proyectos",
+  "projects.lead": "Estos son algunos proyectos que he desarrollado.",
+  "projects.filters.frontend": "Front-end",
+  "projects.filters.backend": "Back-end",
+  "projects.cta.demo": "Demo",
+  "projects.cta.code": "Código",
+  "projects.empty": "Próximamente ✨",
+
+  "contact.title": "Contacto",
+  "contact.lead": "¿Buscando talento o un proyecto emocionante? ¡Hablemos!",
+  "contact.form.name": "Nombre",
+  "contact.form.email": "Correo",
+  "contact.form.message": "Mensaje",
+  "contact.form.placeholder.name": "tu nombre",
+  "contact.form.placeholder.email": "tu@email.com",
+  "contact.form.placeholder.message": "Cuéntame cómo puedo ayudarte",
+  "contact.form.submit": "Enviar mensaje",
+
+  "alt.profile": "Foto de perfil de Thalíz",
+  "alt.project.screenshot": "{{title}} — captura"
+}

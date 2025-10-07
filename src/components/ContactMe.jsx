@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import { useI18n } from "../hooks/useI18n";
+
 
 export default function Contact() {
+  const {tx } = useI18n();
+  
   const [status, setStatus] = useState({ loading: false, ok: null, msg: "" });
+
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -43,8 +48,8 @@ export default function Contact() {
   return (
     <section id="contacto-section" className="contact">
       <header className="contact__head">
-        <h2>Contact</h2>
-        <p>Working on something exciting or hiring? Let’s chat!</p>
+        <h2>{tx("contact.title")}</h2>
+        <p>{tx("contact.lead")}</p>
       </header>
 
       <div className="contact__grid">
@@ -52,7 +57,7 @@ export default function Contact() {
         <div className="contact__info">
           <ul>
             <li>
-              <strong>Email:</strong>{" "}
+              <strong>{tx("contact.form.email")}:</strong>{" "}
               <a 
               className="link"
               href="mailto:fajardothaliz@gmail.com">
@@ -71,7 +76,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <strong>Location:</strong> Mexico City
+              <strong>{tx("about.info.location")} :</strong> Mexico City
             </li>
           </ul>
           <p className="contact__note">Typical response time: ~24h.</p>
@@ -82,17 +87,17 @@ export default function Contact() {
           {/* Honeypot anti‑spam */}
           <input type="text" name="company" tabIndex="-1" autoComplete="off" className="hp" />
 
-          <label> Name
-            <input name="name" type="text" placeholder="your name"  required minLength={2}  />
+          <label> {tx("contact.form.name")}
+            <input name="name" type="text" placeholder={tx("contact.form.placeholder.name")}  required minLength={2}  />
           </label>
 
-          <label> Email 
-            <input  name="email" type="email"placeholder="your@email.com"  inputMode="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
+          <label> {tx("contact.form.email")} 
+            <input  name="email" type="email"placeholder={tx("contact.form.placeholder.email")} inputMode="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
           </label>
 
           <label>
-            Message
-            <textarea name="message" rows="5" placeholder="Tell me how I can help you"required />
+            {tx("contact.form.message")}
+            <textarea name="message" rows="5" placeholder={tx("contact.form.placeholder.message")} required />
           </label>
 
 
