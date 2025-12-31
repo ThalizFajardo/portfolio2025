@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, GraduationCap, Phone, Mail } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
-import prophilePic from "../../dist/assets/profilepic-BKFAKwoQ.jpg";
+import prophilePic from "../assets/pics/profilepic-bkfakwoq.jpg";
 
 const About = () => {
   const infoItems = [
