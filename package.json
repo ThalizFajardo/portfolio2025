@@ -1,7 +1,22 @@
 {
   "name": "portfolio2025",
+  "author" : "Thalíz Fajardo <fajardothaliz@gmail.com>",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "license":"MIT",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/ThalizFajardo/portfolio2025.git"
+  },
+  "description": "Personal portafolio built whit React, Typescript, TailwindCSS, and Framer Motion",
+   "keywords": [
+    "react",
+    "typescript",
+    "frontend",
+    "portfolio",
+    "tailwindcss",
+    "framer-motion"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
