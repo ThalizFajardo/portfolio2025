@@ -29,7 +29,7 @@
   "about.info.mail": "Mail",
   "about.info.phone": "Phone",
 
-    "skills.title": "Skills",
+  "skills.title": "Skills",
   "skills.sub": "Technical stack and skills I use to build clean, functional products.",
   "skills.frontend": "Front-end",
   "skills.tools": "Tools",
@@ -38,7 +38,7 @@
   "skills.level.starter": "Starter",
   "skills.level.intermediate": "Intermediate",
   "skills.level.advanced": "Advanced",
-  "skills.softskills.strong":"Strong",
+  "skills.softskills.strong": "Strong",
 
   "skills.softskills.english": "English",
   "skills.softskills.cleanUI": "Clean UI & detail",

@@ -1,79 +1,81 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Filter } from 'lucide-react';
-import { Card, CardContent } from './ui/card';
- import { Button } from './ui/button';
-import { Badge } from './ui/badge';
-import quotesImage from "../assets/pics/quotesAppImg.jpeg"
-import rymIcon from "../assets/pics/rymfoto.jpeg"
-import eweaterImage from "../assets/pics/ewaterAppImg.jpeg"
-
-
-
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, Github, Filter } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
+import quotesImage from "../assets/pics/quotesAppImg.jpeg";
+import rymIcon from "../assets/pics/rymfoto.jpeg";
+import eweaterImage from "../assets/pics/ewaterAppImg.jpeg";
 
 const Projects = () => {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState("all");
 
   const projects = [
-   {
+    {
       id: 1,
-      title: 'Portfolio Website',
-      description: 'Portafolio personal desarrollado con React para presentar proyectos, habilidades técnicas y experiencia. Incluye animaciones, diseño responsive y compenentes reutilizables',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop',
-      tags: ['React', 'Framer Motion', 'Tailwind'],
-      category: 'frontend',
-      gradient: 'from-purple-500 to-pink-500',
-      liveUrl: '#',
-      githubUrl: 'https://github.com/ThalizFajardo/portfolio2025',
+      title: "Portfolio Website",
+      description:
+        "Portafolio personal desarrollado con React para presentar proyectos, habilidades técnicas y experiencia. Incluye animaciones, diseño responsive y compenentes reutilizables",
+      image:
+        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+      tags: ["React", "Framer Motion", "Tailwind"],
+      category: "frontend",
+      gradient: "from-purple-500 to-pink-500",
+      liveUrl: "#",
+      githubUrl: "https://github.com/ThalizFajardo/portfolio2025",
     },
     {
       id: 2,
-      title: 'Weather Dashboard',
-      description: 'Dashboard del clima desarrollado para practicar integracion con APIs externas. Maneja peticiones asíncronas , estados de carga y visualización de datos  en tiempo real',
+      title: "Weather Dashboard",
+      description:
+        "Dashboard del clima desarrollado para practicar integracion con APIs externas. Maneja peticiones asíncronas , estados de carga y visualización de datos  en tiempo real",
       image: eweaterImage,
-      tags: ['React', 'OpenWeather API', 'Estado', 'Fetch'],
-      category: 'frontend',
-      gradient: 'from-blue-400 to-cyan-300',
-      liveUrl: 'https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/',
-      githubUrl: 'https://github.com/ThalizFajardo/WeaterApp',
+      tags: ["React", "OpenWeather API", "Estado", "Fetch"],
+      category: "frontend",
+      gradient: "from-blue-400 to-cyan-300",
+      liveUrl:
+        "https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/",
+      githubUrl: "https://github.com/ThalizFajardo/WeaterApp",
     },
     {
       id: 3,
-      title: 'Rick and Morty Wiki',
-      description: 'Proyecto de práctica para el consumo de Apis externas en React.Incluye manejo de efectos secundarios, carga de datos asíncrona y renderizado dinámico mediante useEffect',
-      image:rymIcon,
-      tags: ['React', 'API Rest', 'useEffect'],
-      category: 'frontend',
-      gradient: 'from-cyan-500 to-blue-600',
-      liveUrl: 'https://6342528143c38a4ee6073b74--neon-scone-747a15.netlify.app/',
-      githubUrl: 'https://github.com/ThalizFajardo/Rick-Morty',
+      title: "Rick and Morty Wiki",
+      description:
+        "Proyecto de práctica para el consumo de Apis externas en React.Incluye manejo de efectos secundarios, carga de datos asíncrona y renderizado dinámico mediante useEffect",
+      image: rymIcon,
+      tags: ["React", "API Rest", "useEffect"],
+      category: "frontend",
+      gradient: "from-cyan-500 to-blue-600",
+      liveUrl:
+        "https://6342528143c38a4ee6073b74--neon-scone-747a15.netlify.app/",
+      githubUrl: "https://github.com/ThalizFajardo/Rick-Morty",
     },
-     {
+    {
       id: 4,
-      title: 'Quotes App',
-      description: 'Proyecto de práctica enfocado en el manejo de estado en React. Implementa cambios dinámicos de contenido y estilos a partir de datos locales, reforzando el uso de useState y renderizado condicional ',
+      title: "Quotes App",
+      description:
+        "Proyecto de práctica enfocado en el manejo de estado en React. Implementa cambios dinámicos de contenido y estilos a partir de datos locales, reforzando el uso de useState y renderizado condicional ",
       image: quotesImage,
-      tags: ['React', 'useState', 'CSS'],
-      category: 'frontend',
-      gradient: 'from-slate-700 to-slate-900',
-      liveUrl: 'https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/',
-      githubUrl: 'https://github.com/ThalizFajardo/QuotesApp',
+      tags: ["React", "useState", "CSS"],
+      category: "frontend",
+      gradient: "from-slate-700 to-slate-900",
+      liveUrl:
+        "https://6328f61f39c047032d6c4499--chic-bubblegum-6e9cad.netlify.app/",
+      githubUrl: "https://github.com/ThalizFajardo/QuotesApp",
     },
-    
-    
-    
   ];
 
   const categories = [
-    { id: 'all', label: 'Todos' },
-    { id: 'frontend', label: 'Frontend' },
-    { id: 'fullstack', label: 'Full Stack' },
+    { id: "all", label: "Todos" },
+    { id: "frontend", label: "Frontend" },
+    { id: "fullstack", label: "Full Stack" },
   ];
 
-  const filteredProjects = filter === 'all'
-    ? projects
-    
-    : projects.filter((project) => project.category === filter);
+  const filteredProjects =
+    filter === "all"
+      ? projects
+      : projects.filter((project) => project.category === filter);
 
   return (
     <section id="projects" className="py-20 px-4 relative">
@@ -111,11 +113,11 @@ const Projects = () => {
             <Button
               key={category.id}
               onClick={() => setFilter(category.id)}
-              variant={filter === category.id ? 'default' : 'outline'}
+              variant={filter === category.id ? "default" : "outline"}
               className={`bg-white rounded-full font-semibold transition-all duration-300 ${
                 filter === category.id
-                  ? 'bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white shadow-lg'
-                  : 'border-2 border-gray-300 hover:border-orange-500 hover:text-orange-600'
+                  ? "bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white shadow-lg"
+                  : "border-2 border-gray-300 hover:border-orange-500 hover:text-orange-600"
               }`}
             >
               {category.label}
@@ -124,10 +126,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div
-          layout
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {filteredProjects.map((project, index) => (
               <motion.div
@@ -150,7 +149,9 @@ const Projects = () => {
                         whileHover={{ scale: 1.1 }}
                         transition={{ duration: 0.4 }}
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-4`}>
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center gap-4`}
+                      >
                         <motion.a
                           href={project.liveUrl}
                           target="_blank"
@@ -183,7 +184,7 @@ const Projects = () => {
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                         {project.tags.map((tag) => (
+                        {project.tags.map((tag) => (
                           <Badge
                             key={tag}
                             variant="secondary"
@@ -191,7 +192,7 @@ const Projects = () => {
                           >
                             {tag}
                           </Badge>
-                        ))} 
+                        ))}
                       </div>
                     </div>
                   </CardContent>
@@ -209,7 +210,8 @@ const Projects = () => {
             className="text-center py-12"
           >
             <p className="text-xl text-gray-500">
-             Proyectos full-stack en desarrollo, muy pronto estarán disponibles aquí 🙂.
+              Proyectos full-stack en desarrollo, muy pronto estarán disponibles
+              aquí 🙂.
             </p>
           </motion.div>
         )}

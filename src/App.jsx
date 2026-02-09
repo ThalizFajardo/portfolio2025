@@ -1,14 +1,11 @@
-
-import './App.css';
-import './index.css';
-import Portfolio from './pages/Portfolio';
+import "./App.css";
+import "./index.css";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
-
-
   return (
     <>
-      <Portfolio/>
+      <Portfolio />
     </>
   );
 }

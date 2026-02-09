@@ -35,13 +35,10 @@
   "skills.tools": "Herramientas",
   "skills.soft": "Habilidades blandas",
   "skills.level.starter": "Principiante",
-  
-
 
   "skills.level.intermediate": "Intermedio",
   "skills.level.advanced": "Avanzado",
-"skills.softskills.strong":"Fuerte",
-
+  "skills.softskills.strong": "Fuerte",
 
   "skills.softskills.english": "Inglés",
   "skills.softskills.cleanUI": "Clean UI & detail",

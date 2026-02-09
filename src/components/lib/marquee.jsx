@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import { Pause } from "lucide-react";
+
 import { useEffect } from "react";
 
 const Marquee = ({ children, speed = 40, reverse = false }) => {

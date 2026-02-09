@@ -11,12 +11,11 @@ import {
   Target,
   Workflow,
   Languages,
-  Wrench,
   Sparkles,
 } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import Marquee from "./lib/marquee";
+// import Marquee from "./lib/marquee";
 
 const Skills = () => {
   const technicalSkills = [
@@ -49,7 +48,7 @@ const Skills = () => {
       category: "Backend",
       icon: Layers,
       color: "from-cyan-500 to-teal-500",
-      skills: ["Node.js", "Express", "APIs REST","PostgreSQL",  "JWT"],
+      skills: ["Node.js", "Express", "APIs REST", "PostgreSQL", "JWT"],
     },
   ];
 
@@ -103,7 +102,8 @@ const Skills = () => {
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-           Stack técnico que utilizo para construir interfaces modernas y productos web funcionales.
+            Stack técnico que utilizo para construir interfaces modernas y
+            productos web funcionales.
           </p>
         </motion.div>
 
@@ -116,7 +116,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 gap-6"
           >
-            {technicalSkills.map((skillGroup, index) => (
+            {technicalSkills.map((skillGroup) => (
               <motion.div variants={itemVariants}>
                 <Card className="h-full border-none shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group bg-white">
                   <CardContent className="p-6">
@@ -185,7 +185,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
           >
-            {softSkills.map((skill, index) => (
+            {softSkills.map((skill) => (
               <motion.div
                 key={skill.name}
                 variants={itemVariants}
@@ -240,7 +240,8 @@ const Skills = () => {
                   ¿Buscas una desarrolladora frontend ?
                 </h3>
                 <p className="text-lg mb-6 max-w-2xl mx-auto opacity-90">
-                  Estoy disponible para proyectos freelance y oportunidades de colaboración.
+                  Estoy disponible para proyectos freelance y oportunidades de
+                  colaboración.
                 </p>
                 <motion.button
                   whileHover={{ scale: 1.05 }}

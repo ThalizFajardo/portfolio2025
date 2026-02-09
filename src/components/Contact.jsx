@@ -80,7 +80,7 @@ const Contact = () => {
       });
 
       setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
+    } catch {
       toast({
         title: "¡Error!",
         description: "No se pudo enviar el mensaje. Intenta más tarde.",
@@ -88,7 +88,6 @@ const Contact = () => {
       });
     }
     setIsSubmitting(false);
-
   };
 
   return (
@@ -96,7 +95,6 @@ const Contact = () => {
       id="contact"
       className="py-20 px-4 relative bg-gradient-to-b from-transparent via-pink-50/30 to-transparent"
     >
-
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -132,8 +130,8 @@ const Contact = () => {
                 Información de Contacto
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                Estoy disponible para colaborar en proyectos frontend
-y oportunidades donde pueda aportar valor técnico.
+                Estoy disponible para colaborar en proyectos frontend y
+                oportunidades donde pueda aportar valor técnico.
               </p>
             </div>
 
@@ -191,8 +189,6 @@ y oportunidades donde pueda aportar valor técnico.
                 ))}
               </div>
             </div>
-
-           
           </motion.div>
 
           {/* contact Form */}
@@ -267,7 +263,9 @@ y oportunidades donde pueda aportar valor técnico.
                     whileTap={{ scale: 0.98 }}
                   >
                     <Button
-                     onClick={() => toast({ title: "Funciona", description: "Todo ok" })}
+                      onClick={() =>
+                        toast({ title: "Funciona", description: "Todo ok" })
+                      }
                       type="submit"
                       disabled={isSubmitting}
                       className="w-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 hover:from-orange-600 hover:via-pink-600 hover:to-purple-700 text-white font-bold py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
@@ -287,9 +285,6 @@ y oportunidades donde pueda aportar valor técnico.
             </Card>
           </motion.div>
         </div>
-
-
-
 
         {/* Footer */}
         <motion.div

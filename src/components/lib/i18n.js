@@ -3,7 +3,6 @@ import { initReactI18next } from "react-i18next";
 import en from "../../locales/en/common.json";
 import es from "../../locales/es/common.json";
 
-
 const saved = localStorage.getItem("lng");
 const browser = navigator.language?.startsWith("es") ? "es" : "en";
 const initial = saved || browser || "en";
@@ -16,10 +15,10 @@ i18next.use(initReactI18next).init({
   react: { useSuspense: false },
 });
 
-document.documentElement.setAttribute("lang",initial);
-i18next.on("languageChanged",(lng) =>{
-    document.documentElement.setAttribute("lang",lng);
-    localStorage.setItem("lng",lng);
+document.documentElement.setAttribute("lang", initial);
+i18next.on("languageChanged", (lng) => {
+  document.documentElement.setAttribute("lang", lng);
+  localStorage.setItem("lng", lng);
 });
 
 export default i18next;

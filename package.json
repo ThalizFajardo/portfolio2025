@@ -1,15 +1,15 @@
 {
   "name": "portfolio2025",
-  "author" : "Thalíz Fajardo <fajardothaliz@gmail.com>",
+  "author": "Thalíz Fajardo <fajardothaliz@gmail.com>",
   "private": true,
   "version": "0.1.0",
-  "license":"MIT",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url":"https://github.com/ThalizFajardo/portfolio2025.git"
+    "url": "https://github.com/ThalizFajardo/portfolio2025.git"
   },
   "description": "Personal portafolio built whit React, Typescript, TailwindCSS, and Framer Motion",
-   "keywords": [
+  "keywords": [
     "react",
     "typescript",
     "frontend",
@@ -22,7 +22,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "format": "prettier . --write",
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.14.4",
@@ -48,12 +50,16 @@
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.22",
-    "eslint": "^9.30.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "husky": "^9.1.7",
     "postcss": "^8.5.6",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4.1.18",
+    "typescript-eslint": "^8.55.0",
     "vite": "^7.0.4"
   }
 }

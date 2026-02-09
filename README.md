@@ -13,4 +13,3 @@ Este repositorio contiene el código fuente de mi portafolio personal, donde mue
 - Vite
 
 ## 🧩 Estructura del proyecto
-

@@ -99,9 +99,9 @@ const About = () => {
               </h3>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Mi principal enfoque es crear interfaces
-                claras, funcionales y bien estructuradas. Trabajo principalmente
-                con React y tecnologías modernas del ecosistema web.
+                Mi principal enfoque es crear interfaces claras, funcionales y
+                bien estructuradas. Trabajo principalmente con React y
+                tecnologías modernas del ecosistema web.
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed">
