@@ -35,7 +35,7 @@ const Projects = () => {
       category: "frontend",
       gradient: "from-blue-400 to-cyan-300",
       liveUrl:
-        "https://63163593b38a9513e522c938--spontaneous-strudel-0306bb.netlify.app/",
+        "https://spontaneous-strudel-0306bb.netlify.app/",
       githubUrl: "https://github.com/ThalizFajardo/WeaterApp",
     },
     {
